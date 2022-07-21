@@ -19,7 +19,6 @@ const NotesListPage:React.FC = () => {
     let getNotes = async() => {
         let response = await fetch('https://enas-notes.herokuapp.com/api/notes/')
         let data = await response.json()
-        console.log('DATA:', data)
         setNotes(data)
     }
 

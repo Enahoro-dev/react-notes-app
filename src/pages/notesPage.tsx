@@ -19,7 +19,6 @@ const NotesPage:React.FC = () => {
         if (noteId === 'new') return
         let response = await fetch(`https://enas-notes.herokuapp.com/api/notes/ ${noteId}/`)
         let data:Note  = await response.json()
-        console.log('DATA:', data)
         setNote(data)
     }
 
