@@ -51,7 +51,8 @@ const NotesPage:React.FC = () => {
                 'Content-Type':'application/json',
             },
         })
-        navigate('/')
+        navigate('/');
+        window.location.reload();
     }
 
 
@@ -64,6 +65,7 @@ const NotesPage:React.FC = () => {
             createNote()
         }    
         navigate('/')
+        window.location.reload();
     }
 
     return(
