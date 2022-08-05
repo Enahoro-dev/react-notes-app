@@ -51,7 +51,9 @@ const NotesPage:React.FC = () => {
                 'Content-Type':'application/json',
             },
         })
-        navigate('/');
+        setTimeout(()=>{
+            navigate('/')
+        },2000)
     }
 
 
