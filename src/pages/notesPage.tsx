@@ -62,8 +62,11 @@ const NotesPage:React.FC = () => {
             updateNote()
         }else if (noteId === 'new' && note !== null){
             createNote()
-        }    
-        navigate('/')
+        }
+        setTimeout(()=>{
+            navigate('/')
+        },5000)    
+        
     }
 
     return(
